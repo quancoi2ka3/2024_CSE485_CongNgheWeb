@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Navigation</title>
-    <!-- Thêm link để sử dụng Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         nav {
-            background-color: #333;
+            background-color: #000080;
             padding: 10px;
-            display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử bên trong */
-            align-items: center; /* Căn các phần tử theo chiều dọc */
+            display: flex;
+            align-items: center;
         }
 
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
-            display: flex; /* Hiển thị các mục theo hàng ngang */
+            display: flex;
         }
 
         li {
@@ -26,7 +25,7 @@
         }
 
         li:last-child {
-            margin-right: 0; /* Loại bỏ margin phải của mục cuối cùng */
+            margin-right: 0;
         }
 
         li a {
@@ -35,12 +34,14 @@
             font-weight: bold;
         }
 
+
         li a:hover {
             color: yellow;
         }
 
         .home-icon {
-            margin-right: 10px; /* Khoảng cách giữa biểu tượng ngôi nhà và các mục trong menu */
+            margin-right: 10px;
+            color :white;
         }
     </style>
 </head>
@@ -60,7 +61,7 @@ $navItems = [
 ?>
 
 <nav>
-    <!-- Thẻ <i> để chứa biểu tượng ngôi nhà -->
+
     <i class="fas fa-home home-icon"></i>
     <ul>
         <?php
